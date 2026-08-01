@@ -13,6 +13,17 @@
   --color-surface: #ffffff;
   --color-muted: #6b7280;
   --color-dark: #111827;
+  --animate-glow: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 8px 1px rgba(239, 68, 68, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 22px 5px rgba(239, 68, 68, 0.9);
+  }
 }
 
 body {

@@ -244,9 +244,9 @@ export default function ChatWidget() {
   return (
     <>
       {open && (
-        <div className="fixed inset-x-0 bottom-0 z-[60] flex flex-col bg-white shadow-2xl border-t border-gray-200 md:inset-x-auto md:bottom-6 md:right-6 md:w-[380px] md:h-[600px] md:max-h-[calc(100vh-6rem)] md:rounded-2xl md:border md:shadow-2xl">
+        <div className="fixed inset-0 z-[60] flex flex-col bg-white md:inset-x-auto md:bottom-6 md:right-6 md:w-[380px] md:h-[600px] md:max-h-[calc(100vh-6rem)] md:rounded-2xl md:border md:shadow-2xl">
           {/* Header */}
-          <div className="flex items-center justify-between px-4 py-3 bg-primary text-white rounded-t-2xl">
+          <div className="flex items-center justify-between px-4 py-3 bg-primary text-white md:rounded-t-2xl">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -467,7 +467,7 @@ export default function ChatWidget() {
                 <div className="px-4 pb-3 bg-white">
                   <button
                     onClick={endSession}
-                    className="w-full py-2 rounded-full text-xs text-muted hover:text-red-500 transition"
+                    className="w-full py-3 rounded-full bg-red-500 text-white font-semibold text-sm tracking-wide hover:bg-red-600 transition animate-glow"
                   >
                     End Session
                   </button>
