@@ -7,8 +7,8 @@
       "password": "expert123",
       "specialty": "Anxiety & Stress",
       "online": true,
-      "busy": true,
-      "sessionsServed": 1,
+      "busy": false,
+      "sessionsServed": 0,
       "joinedAt": "2026-01-10T10:00:00.000Z"
     },
     {
@@ -34,107 +34,17 @@
       "joinedAt": "2026-03-01T10:00:00.000Z"
     },
     {
-      "id": "exp_msatbtmvs6milu",
+      "id": "exp_aman",
       "name": "Aman Prajapati",
       "email": "amanforsure@gmail.com",
       "password": "aman9811",
       "specialty": "Depression",
       "online": false,
       "busy": false,
-      "sessionsServed": 4,
+      "sessionsServed": 0,
       "joinedAt": "2026-08-01T20:17:17.767Z"
     }
   ],
-  "sessions": [
-    {
-      "id": "ses_msatlkat1t4f8q",
-      "type": "instant",
-      "userId": "usr_msatlkat13bpkg",
-      "userName": "Guest",
-      "expertId": "exp_priya",
-      "status": "active",
-      "scheduledFor": null,
-      "createdAt": "2026-08-01T20:24:52.229Z",
-      "startedAt": "2026-08-01T20:24:52.229Z",
-      "endedAt": null
-    },
-    {
-      "id": "ses_msatmp0enpqkex",
-      "type": "instant",
-      "userId": "usr_msatmp0ezvhkpv",
-      "userName": "Aman",
-      "expertId": "exp_msatbtmvs6milu",
-      "status": "ended",
-      "scheduledFor": null,
-      "createdAt": "2026-08-01T20:25:44.990Z",
-      "startedAt": "2026-08-01T20:25:44.990Z",
-      "endedAt": "2026-08-01T20:26:16.220Z"
-    },
-    {
-      "id": "ses_msatotooqwmpn5",
-      "type": "scheduled",
-      "userId": "usr_msatotoo3k80kr",
-      "userName": "Neha",
-      "expertId": "exp_msatbtmvs6milu",
-      "status": "ended",
-      "scheduledFor": "2026-08-21T08:30:00.000Z",
-      "createdAt": "2026-08-01T20:27:24.360Z",
-      "startedAt": "2026-08-01T20:27:30.610Z",
-      "endedAt": "2026-08-01T20:34:50.743Z"
-    },
-    {
-      "id": "ses_msatxxz8kbyneh",
-      "type": "instant",
-      "userId": "usr_msatxxz8dfdmnt",
-      "userName": "Rishabh",
-      "expertId": "exp_msatbtmvs6milu",
-      "status": "ended",
-      "scheduledFor": null,
-      "createdAt": "2026-08-01T20:34:29.828Z",
-      "startedAt": "2026-08-01T20:34:50.757Z",
-      "endedAt": "2026-08-01T20:38:08.355Z"
-    },
-    {
-      "id": "ses_msau338gca63c6",
-      "type": "instant",
-      "userId": "usr_msau338gark9ur",
-      "userName": "raju",
-      "expertId": "exp_msatbtmvs6milu",
-      "status": "ended",
-      "scheduledFor": null,
-      "createdAt": "2026-08-01T20:38:29.920Z",
-      "startedAt": "2026-08-01T20:38:39.640Z",
-      "endedAt": "2026-08-01T20:38:51.990Z"
-    }
-  ],
-  "messages": [
-    {
-      "id": "msg_msatmwmmgdzdf7",
-      "sessionId": "ses_msatmp0enpqkex",
-      "sender": "expert",
-      "text": "hi aman",
-      "timestamp": "2026-08-01T20:25:54.862Z"
-    },
-    {
-      "id": "msg_msatn6ef3mehu3",
-      "sessionId": "ses_msatmp0enpqkex",
-      "sender": "user",
-      "text": "hey ive been feeling low",
-      "timestamp": "2026-08-01T20:26:07.527Z"
-    },
-    {
-      "id": "msg_msatpcntcem28m",
-      "sessionId": "ses_msatotooqwmpn5",
-      "sender": "expert",
-      "text": "heyy neha",
-      "timestamp": "2026-08-01T20:27:48.953Z"
-    },
-    {
-      "id": "msg_msatyllc9y5hqf",
-      "sessionId": "ses_msatxxz8kbyneh",
-      "sender": "expert",
-      "text": "yo rishabh",
-      "timestamp": "2026-08-01T20:35:00.432Z"
-    }
-  ]
+  "sessions": [],
+  "messages": []
 }
