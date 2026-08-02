@@ -40,8 +40,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-dark">Email</h3>
-                      <a href="mailto:hello@prakritimind.org" className="text-muted hover:text-primary transition-colors">
-                        hello@prakritimind.org
+                      <a href="mailto:amanforsure@gmail.com" className="text-muted hover:text-primary transition-colors">
+                        amanforsure@gmail.com
                       </a>
                     </div>
                   </div>
@@ -54,8 +54,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-dark">Phone / WhatsApp</h3>
-                      <a href="tel:+911234567890" className="text-muted hover:text-primary transition-colors">
-                        +91 12345 67890
+                      <a href="tel:+918810584268" className="text-muted hover:text-primary transition-colors">
+                        +91 8810584268
                       </a>
                     </div>
                   </div>

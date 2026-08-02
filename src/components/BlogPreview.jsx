@@ -10,6 +10,8 @@ const colorMap = {
 const latestPosts = posts.slice(0, 6);
 
 export default function BlogPreview() {
+  if (posts.length === 0) return null;
+
   return (
     <section className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

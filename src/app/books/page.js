@@ -4,16 +4,16 @@ import Footer from "@/components/Footer";
 export const metadata = { title: "Books — Prakriti Mind", description: "Curated reference books on mental health, anxiety, mindfulness, and self-care." };
 
 const books = [
-  { title: "The Anxiety and Phobia Workbook", author: "Edmund J. Bourne", category: "Anxiety", desc: "A practical guide with proven techniques to manage anxiety, panic, and phobias.", url: "#" },
-  { title: "Feeling Good: The New Mood Therapy", author: "David D. Burns", category: "Depression", desc: "Classic CBT-based methods to overcome depression and negative thought patterns.", url: "#" },
-  { title: "The Body Keeps the Score", author: "Bessel van der Kolk", category: "Trauma", desc: "How trauma reshapes the brain and body — and the paths to healing.", url: "#" },
-  { title: "Wherever You Go, There You Are", author: "Jon Kabat-Zinn", category: "Mindfulness", desc: "Mindfulness meditation for everyday life by the pioneer of MBSR.", url: "#" },
-  { title: "Man&rsquo;s Search for Meaning", author: "Viktor E. Frankl", category: "Resilience", desc: "A profound reflection on finding purpose even in the darkest circumstances.", url: "#" },
-  { title: "Daring Greatly", author: "Bren&eacute; Brown", category: "Self-Esteem", desc: "How vulnerability and courage can transform the way we live and connect.", url: "#" },
-  { title: "The Happiness Trap", author: "Russ Harris", category: "Wellness", desc: "An ACT-based guide to building a rich and meaningful life beyond happiness.", url: "#" },
-  { title: "Atomic Habits", author: "James Clear", category: "Self-Care", desc: "Tiny changes that lead to remarkable results — essential for building healthy routines.", url: "#" },
-  { title: "Lost Connections", author: "Johann Hari", category: "Depression", desc: "Uncovering the real causes of depression and the unexpected solutions.", url: "#" },
-  { title: "The Power of Now", author: "Eckhart Tolle", category: "Mindfulness", desc: "A guide to spiritual enlightenment through living fully in the present moment.", url: "#" },
+  { title: "The Anxiety and Phobia Workbook", author: "Edmund J. Bourne", category: "Anxiety", desc: "A practical guide with proven techniques to manage anxiety, panic, and phobias.", url: "https://www.google.com/search?tbm=bks&q=The+Anxiety+and+Phobia+Workbook+Edmund+Bourne" },
+  { title: "Feeling Good: The New Mood Therapy", author: "David D. Burns", category: "Depression", desc: "Classic CBT-based methods to overcome depression and negative thought patterns.", url: "https://www.google.com/search?tbm=bks&q=Feeling+Good+The+New+Mood+Therapy+David+Burns" },
+  { title: "The Body Keeps the Score", author: "Bessel van der Kolk", category: "Trauma", desc: "How trauma reshapes the brain and body — and the paths to healing.", url: "https://www.google.com/search?tbm=bks&q=The+Body+Keeps+the+Score+Bessel+van+der+Kolk" },
+  { title: "Wherever You Go, There You Are", author: "Jon Kabat-Zinn", category: "Mindfulness", desc: "Mindfulness meditation for everyday life by the pioneer of MBSR.", url: "https://www.google.com/search?tbm=bks&q=Wherever+You+Go+There+You+Are+Jon+Kabat-Zinn" },
+  { title: "Man&rsquo;s Search for Meaning", author: "Viktor E. Frankl", category: "Resilience", desc: "A profound reflection on finding purpose even in the darkest circumstances.", url: "https://www.google.com/search?tbm=bks&q=Man%27s+Search+for+Meaning+Viktor+Frankl" },
+  { title: "Daring Greatly", author: "Bren&eacute; Brown", category: "Self-Esteem", desc: "How vulnerability and courage can transform the way we live and connect.", url: "https://www.google.com/search?tbm=bks&q=Daring+Greatly+Brene+Brown" },
+  { title: "The Happiness Trap", author: "Russ Harris", category: "Wellness", desc: "An ACT-based guide to building a rich and meaningful life beyond happiness.", url: "https://www.google.com/search?tbm=bks&q=The+Happiness+Trap+Russ+Harris" },
+  { title: "Atomic Habits", author: "James Clear", category: "Self-Care", desc: "Tiny changes that lead to remarkable results — essential for building healthy routines.", url: "https://www.google.com/search?tbm=bks&q=Atomic+Habits+James+Clear" },
+  { title: "Lost Connections", author: "Johann Hari", category: "Depression", desc: "Uncovering the real causes of depression and the unexpected solutions.", url: "https://www.google.com/search?tbm=bks&q=Lost+Connections+Johann+Hari" },
+  { title: "The Power of Now", author: "Eckhart Tolle", category: "Mindfulness", desc: "A guide to spiritual enlightenment through living fully in the present moment.", url: "https://www.google.com/search?tbm=bks&q=The+Power+of+Now+Eckhart+Tolle" },
 ];
 
 const categoryColors = {

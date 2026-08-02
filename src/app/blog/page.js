@@ -29,7 +29,15 @@ export default function BlogPage() {
 
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {posts.length === 0 ? (
+              <div className="text-center py-16 md:py-24">
+                <h2 className="text-2xl font-bold text-dark">Articles Coming Soon</h2>
+                <p className="text-muted mt-4 max-w-md mx-auto">
+                  We are preparing new articles on mental health and well-being. Please check back soon.
+                </p>
+              </div>
+            ) : (
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {posts.map((post) => {
                 const colors = colorMap[post.color] || colorMap.primary;
                 return (
@@ -53,7 +61,8 @@ export default function BlogPage() {
                   </article>
                 );
               })}
-            </div>
+              </div>
+            )}
           </div>
         </section>
       </main>

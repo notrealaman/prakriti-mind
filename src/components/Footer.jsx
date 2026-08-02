@@ -42,13 +42,13 @@ export default function Footer() {
                 <span className="text-sm text-gray-400">Emergency: 24/7 Helpline</span>
               </li>
               <li>
-                <a href="tel:+911234567890" className="text-sm text-gray-400 hover:text-primary-light transition-colors">
-                  +91 12345 67890
+                <a href="tel:+918810584268" className="text-sm text-gray-400 hover:text-primary-light transition-colors">
+                  +91 8810584268
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@prakritimind.org" className="text-sm text-gray-400 hover:text-primary-light transition-colors">
-                  hello@prakritimind.org
+                <a href="mailto:amanforsure@gmail.com" className="text-sm text-gray-400 hover:text-primary-light transition-colors">
+                  amanforsure@gmail.com
                 </a>
               </li>
             </ul>
