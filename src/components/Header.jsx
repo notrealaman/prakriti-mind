@@ -22,9 +22,8 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-white font-bold text-sm">PM</span>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.jpg" alt="Prakriti Mind logo" className="w-9 h-9 rounded-full object-cover" />
             <span className="font-semibold text-lg text-dark">
               Prakriti <span className="text-primary">Mind</span>
             </span>

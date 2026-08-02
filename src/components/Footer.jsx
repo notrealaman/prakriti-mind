@@ -7,9 +7,8 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div className="sm:col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-white font-bold text-sm">PM</span>
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo.jpg" alt="Prakriti Mind logo" className="w-9 h-9 rounded-full object-cover" />
               <span className="font-semibold text-lg text-white">
                 Prakriti <span className="text-primary-light">Mind</span>
               </span>
