@@ -41,8 +41,12 @@ export default function BlogPreview() {
             return (
               <article
                 key={post.slug}
-                className={`group bg-white rounded-2xl border ${colors.border} p-6 hover:shadow-lg transition-shadow flex flex-col`}
+                className={`group bg-white rounded-2xl border ${colors.border} overflow-hidden hover:shadow-lg transition-shadow flex flex-col`}
               >
+                {post.coverImage && (
+                  <img src={post.coverImage} alt={post.title} className="w-full h-44 object-cover" />
+                )}
+                <div className="p-6 flex flex-col flex-1">
                 <span className={`inline-flex self-start px-3 py-1 rounded-full text-xs font-semibold ${colors.badge} mb-4`}>
                   {post.category}
                 </span>
@@ -57,6 +61,7 @@ export default function BlogPreview() {
                   <Link href={`/blog/${post.slug}`} className={`text-sm font-semibold ${colors.link} transition-colors`}>
                     Read More &rarr;
                   </Link>
+                </div>
                 </div>
               </article>
             );

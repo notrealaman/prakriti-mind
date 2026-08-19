@@ -34,6 +34,11 @@ export default function BlogPostPage({ params }) {
           </span>
           <h1 className="text-3xl sm:text-4xl font-bold text-dark leading-tight mt-3">{post.title}</h1>
           <time className="block mt-4 text-sm text-muted">{post.date}</time>
+          {post.coverImage && (
+            <div className="mt-8 rounded-2xl overflow-hidden">
+              <img src={post.coverImage} alt={post.title} className="w-full h-auto object-cover max-h-[480px]" />
+            </div>
+          )}
           <div className="mt-10 prose prose-gray max-w-none">
             {post.content ? (
               post.content.split("\n").map((line, i) => {
@@ -51,6 +56,10 @@ export default function BlogPostPage({ params }) {
                       <span className="text-muted">{match[1]}</span>
                     </div>
                   ) : null;
+                }
+                const imgMatch = line.match(/^!\[(.*?)\]\((.*?)\)$/);
+                if (imgMatch) {
+                  return <img key={i} src={imgMatch[2]} alt={imgMatch[1]} className="w-full rounded-xl my-6 object-cover max-h-[400px]" />;
                 }
                 if (line.trim() === "") return null;
                 return <p key={i} className="text-muted leading-relaxed mt-4">{line}</p>;
