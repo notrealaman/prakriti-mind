@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-
-const WA_URL = "https://wa.me/918810584268?text=" + encodeURIComponent("Hi Prakriti Mind! I'd like to book a free 30-minute psychological assistance session. Can you help me with the available slots?");
+import OpenChatButton from "@/components/OpenChatButton";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -39,14 +38,9 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href={WA_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 rounded-full bg-accent text-white text-sm font-semibold hover:bg-accent-dark transition-colors"
-            >
+            <OpenChatButton className="inline-flex items-center px-4 py-2 rounded-full bg-accent text-white text-sm font-semibold hover:bg-accent-dark transition-colors">
               Free Session
-            </a>
+            </OpenChatButton>
           </nav>
 
           <button
@@ -77,14 +71,9 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
-              <a
-                href={WA_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-accent text-white text-sm font-semibold"
-              >
+              <OpenChatButton className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-accent text-white text-sm font-semibold">
                 Free Session
-              </a>
+              </OpenChatButton>
             </nav>
           </div>
         )}

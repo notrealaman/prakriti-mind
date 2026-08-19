@@ -2,8 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import OpenChatButton from "@/components/OpenChatButton";
 import posts from "@/data/posts";
-import { waLink } from "@/lib/whatsapp";
 
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
@@ -74,14 +74,9 @@ export default async function BlogPostPage({ params }) {
           </div>
 
           <div className="mt-12 pt-8 border-t border-gray-100">
-            <a
-              href={waLink()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 rounded-full bg-accent text-white font-semibold shadow-lg shadow-accent/25 hover:bg-accent-dark transition-all"
-            >
+            <OpenChatButton className="inline-flex items-center px-6 py-3 rounded-full bg-accent text-white font-semibold shadow-lg shadow-accent/25 hover:bg-accent-dark transition-all">
               Book a Free Session
-            </a>
+            </OpenChatButton>
           </div>
         </article>
       </main>

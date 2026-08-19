@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { waLink } from "@/lib/whatsapp";
+import OpenChatButton from "@/components/OpenChatButton";
 
 export const metadata = { title: "About — Prakriti Mind", description: "Learn about our mission to provide free psychological assistance to everyone." };
 
@@ -64,14 +64,9 @@ export default function AboutPage() {
                 We are committed to providing professional, confidential, and completely free support —
                 because everyone deserves someone to talk to.
               </p>
-              <a
-                href={waLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-flex items-center px-6 py-3 rounded-full bg-accent text-white font-semibold hover:bg-accent-dark transition-all"
-              >
+              <OpenChatButton className="mt-6 inline-flex items-center px-6 py-3 rounded-full bg-accent text-white font-semibold hover:bg-accent-dark transition-all">
                 Book Your Free Session
-              </a>
+              </OpenChatButton>
             </div>
           </div>
         </section>
