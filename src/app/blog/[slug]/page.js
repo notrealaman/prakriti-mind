@@ -9,14 +9,16 @@ export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-export function generateMetadata({ params }) {
-  const post = posts.find((p) => p.slug === params.slug);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
   return { title: `${post.title} — Prakriti Mind`, description: post.excerpt };
 }
 
-export default function BlogPostPage({ params }) {
-  const post = posts.find((p) => p.slug === params.slug);
+export default async function BlogPostPage({ params }) {
+  const { slug } = await params;
+  const post = posts.find((p) => p.slug === slug);
   if (!post) notFound();
 
   return (
